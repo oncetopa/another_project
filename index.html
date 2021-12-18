@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Board with Local Storage</title>
+<link
+href="https://fonts.googleapis.com/css?family=Jua&display=swap"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<main class="main__container">
+<div class="board__container">
+<table class="board">
+<thead class="board__table-head">
+<tr class="board__titles">
+<th class="board__column">번호</th>
+<th class="board__column">제목</th>
+<th class="board__column">작성자</th>
+<th class="board__column">작성일</th>
+<th class="board__column">조회</th>
+</tr>
+</thead>
+<tbody class="board__contents" id="board-body"></tbody>
+</table>
+<div class="board__index-container" id="index-container"></div>
+</div>
+<div class="contents__container"></div>
+<div class="editor__container">
+<form action="#" class="editor__form" id="editor-form">
+<input
+type="text"
+class="editor__title-input"
+id="editor-title-input"
+placeholder="제목"
+/>
+<input
+type="text"
+class="editor__content-input"
+id="editor-content-input"
+placeholder="내용"
+/>
+<button class="editor__btn" id="editor-submit-btn">작성 완료</button>
+</form>
+</div>
+</main>
+<script src="main2.js"></script>
+</body>
+</html>
